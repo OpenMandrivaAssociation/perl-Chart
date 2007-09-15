@@ -1,7 +1,7 @@
 %define	module	Chart
 %define	name	perl-%{module}
 %define	version	2.4.1
-%define	release	%mkrel 1
+%define	release	%mkrel 2
 
 Name:		%{name}
 Version:	%{version}
