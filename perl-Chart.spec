@@ -16,6 +16,7 @@ BuildRequires:	perl-devel
 %endif
 BuildRequires:  perl-GD
 BuildArch:	noarch
+BuildRoot:	%{_tmppath}/%{name}-%{version}
 
 %description
 Series of charting modules.
