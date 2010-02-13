@@ -1,28 +1,29 @@
-%define	module	Chart
-%define	name	perl-%{module}
-%define	version	2.4.1
-%define	release	%mkrel 5
+%define	upstream_name	 Chart
+%define	upstream_version 2.4.1
 
-Name:		%{name}
-Version:	%{version}
-Release:	%{release}
+Name:       perl-%{upstream_name}
+Version:    %perl_convert_version %{upstream_version}
+Release:    %mkrel 6
+
 Summary:	A series of charting modules
 License:	GPL
 Group:		Development/Perl
-Source:		http://search.cpan.org/CPAN/authors/id/C/CH/CHARTGRP/%{module}-%{version}.tar.bz2
-Url:		http://search.cpan.org/dist/%{module}/
+Url:		http://search.cpan.org/dist/%{upstream_name}/
+Source0:	http://search.cpan.org/CPAN/authors/id/C/CH/CHARTGRP/%{upstream_name}-%{upstream_version}.tar.bz2
+
 %if %{mdkversion} < 1010
 BuildRequires:	perl-devel
 %endif
-BuildRequires:  perl-GD
+BuildRequires:  perl(GD)
+
 BuildArch:	noarch
-BuildRoot:	%{_tmppath}/%{name}-%{version}
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}
 
 %description
 Series of charting modules.
 
 %prep
-%setup -q -n %{module}-%{version}
+%setup -q -n %{upstream_name}-%{upstream_version}
 chmod 0644 README TODO
 
 %build
@@ -30,7 +31,7 @@ chmod 0644 README TODO
 %make
 
 %check
-%{__make} test
+%make test
 
 %install
 rm -rf %{buildroot}
@@ -44,4 +45,3 @@ rm -rf %{buildroot}
 %doc README TODO
 %{perl_vendorlib}/Chart*
 %{_mandir}/*/*
-
