@@ -1,15 +1,15 @@
 %define	upstream_name	 Chart
-%define	upstream_version 2.4.1
+%define	upstream_version 2.4.2
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 6
+Release:    %mkrel 1
 
 Summary:	A series of charting modules
 License:	GPL
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}/
-Source0:	http://search.cpan.org/CPAN/authors/id/C/CH/CHARTGRP/%{upstream_name}-%{upstream_version}.tar.bz2
+Source0:	http://search.cpan.org/CPAN/authors/id/C/CH/CHARTGRP/%{upstream_name}-%{upstream_version}.tar.gz
 
 %if %{mdkversion} < 1010
 BuildRequires:	perl-devel
