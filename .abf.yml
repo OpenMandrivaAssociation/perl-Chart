@@ -1,2 +1,4 @@
+removed_sources:
+  Chart-2.4.2.tar.gz: b53247befbeec35a87cc530e1c7fe3ee02aae46b
 sources:
-  "Chart-2.4.2.tar.gz": b53247befbeec35a87cc530e1c7fe3ee02aae46b
+  Chart-2.4.6.tar.gz: 73de7e50eb37ea716b78e0f00139abe10165f55a
