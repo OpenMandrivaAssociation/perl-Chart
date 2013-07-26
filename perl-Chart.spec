@@ -1,15 +1,15 @@
 %define	upstream_name	 Chart
-%define	upstream_version 2.4.2
+%define upstream_version 2.4.6
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	3
+Version:	%perl_convert_version 2.4.6
+Release:	1
 
 Summary:	A series of charting modules
 License:	GPL
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}/
-Source0:	http://search.cpan.org/CPAN/authors/id/C/CH/CHARTGRP/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:	http://www.cpan.org/authors/id/C/CH/CHARTGRP/Chart-%{version}.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(GD)
@@ -101,4 +101,5 @@ perl Makefile.PL INSTALLDIRS=vendor
 
 * Fri Apr 25 2003 Pixel <pixel@mandrakesoft.com> 1.0.1-4mdk
 - add "BuildRequires: perl-devel"
+
 
