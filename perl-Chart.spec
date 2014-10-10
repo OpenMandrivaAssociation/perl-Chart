@@ -3,7 +3,7 @@
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version 2.4.6
-Release:	1
+Release:	2
 
 Summary:	A series of charting modules
 License:	GPL
