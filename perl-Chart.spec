@@ -8,7 +8,7 @@ Release:	3
 Summary:	A series of charting modules
 License:	GPL
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{upstream_name}/
+Url:		https://search.cpan.org/dist/%{upstream_name}/
 Source0:	http://www.cpan.org/authors/id/C/CH/CHARTGRP/Chart-%{version}.tar.gz
 
 BuildRequires:	perl-devel
