@@ -1,15 +1,15 @@
 %define	upstream_name	 Chart
-%define upstream_version 2.4.6
+%define upstream_version v2.403.9
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version 2.4.6
-Release:	3
+Version:	%{upstream_version}
+Release:	1
 
 Summary:	A series of charting modules
 License:	GPL
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}/
-Source0:	http://www.cpan.org/authors/id/C/CH/CHARTGRP/Chart-%{version}.tar.gz
+Url:		https://github.com/lichtkind/Chart
+Source0:	https://cpan.metacpan.org/authors/id/L/LI/LICHTKIND/Chart-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
